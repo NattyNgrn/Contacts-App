@@ -1,8 +1,51 @@
-# React + Vite
+A contact app that stores name, email, phone number, notes, and a picture in a PSQL database.
+Individual contact can be edited and deleted.
+New contacts can be made. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Connected to cloudinary.
 
-Currently, two official plugins are available:
+Uses react, javascript, tailwinds, PSQL, express, node, cors, and jest.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+you will find comments through oout the code explaing which each part does.
+
+
+Installation for Client:
+npm install tailwinds -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+Make tailwinds.config.js file and postcss.config.js file
+
+
+In tailwinds.config.js make sure it has this path:
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+ 
+
+Add these three directives to your index.css:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+Installation for Server:
+npm init
+npm install express
+npm install cors
+npm install nodemon
+npm install bodyParser
+npm install jest
+npm install pg
+npm install cloudinary
+
+
+
